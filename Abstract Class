@@ -1,0 +1,10 @@
+public abstract class Abstrac {
+    
+  
+    public abstract void donothing(String s);
+
+    public virtual Integer myclass(){
+        return 5;   
+    } 
+    
+}
