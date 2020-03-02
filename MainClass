@@ -1,0 +1,28 @@
+public virtual class MyClass extends Abstrac{
+        
+        
+        
+        public MyClass(){
+            this('This class takes a string');
+            // Will only work for constructors not methods;
+            // If there is another constructor with the same signature it will look for it and pass the 
+            // value being a string into the constructor. 
+        }
+        
+        public MyClass(String s){
+          this(5);
+          system.debug(s);
+          	// This method will run and instantiate the class that require an integer, and passes in 5;
+        }
+        public MyClass(Integer i){
+            system.debug(i);
+            
+        }
+        public override void donothing(String s){
+            system.debug(s);
+        }
+        
+        public String strclass(){
+       	return 'bo';
+        }
+    }
